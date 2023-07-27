@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "discounts-test-app-7"
+client_id = "d01ab5f82cf174a4a45365f2639dfa12"
+application_url = "https://impact-expanded-auburn-impression.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_discounts"
+
+[auth]
+redirect_urls = [
+  "https://impact-expanded-auburn-impression.trycloudflare.com/auth/callback",
+  "https://impact-expanded-auburn-impression.trycloudflare.com/auth/shopify/callback",
+  "https://impact-expanded-auburn-impression.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "sokolovskaya-test-store.myshopify.com"
